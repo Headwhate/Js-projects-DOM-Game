@@ -1,0 +1,49 @@
+*<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="ionicons-2.0.1/css/ionicons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>le jeu du cochon</title>
+</head>
+<body>
+  <section id="middle">
+    <div>
+      <h3><i class="ion-ios-plus-outline"></i> new game</h3>
+    </div>
+    <div>
+      <img id="dicet" src="images/dice-1.png" alt="">
+    </div>
+    <div>
+      <h3 id="roll" onclick='roll()'><i class="ion-ios-loop"></i> roll dice</h3>
+      <h3 id="hold" onclick='hold()'><i class="ion-ios-download-outline"></i> hold</h3>
+    </div>
+  </section>
+  <section id="page">
+    <article class="moit" id="moit1">
+      <div class="total-score">
+        <h2 id="name1"><i class="ion-record" id="icn1"></i></h2>
+        <h1 id="total1">0</h1>
+      </div>
+      <div  class="current-score">
+        <h4>current</h4>
+        <h3 id="curr1">0</h3>
+      </div>
+    </article>
+    <article class="moit" id="moit2">
+      <div class="total-score">
+        <h2 id="name2"><i class="ion-record invi" id="icn2"></i> </h2>
+        <h1 id="total2">0</h1>
+      </div>
+      <div  class="current-score">
+        <h4>current</h4>
+        <h3 id="curr2">0</h3>
+      </div>
+    </article>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
