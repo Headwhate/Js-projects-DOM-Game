@@ -1,6 +1,7 @@
 document.getElementById("roll")
 document.getElementById("Newgame")
 document.getElementById("hold")
+document.getElementById("dicet")
 var total2=document.getElementById("total2")
  var curr2=document.getElementById("curr2") 
 var curr1 = document.getElementById('curr1')
@@ -13,33 +14,88 @@ var currN=0
 var totalN1=0
 var player=1
 var totalN2=0
-function roll()
-{	
+
+		function roll(){	
 
 		if (player===1)
 		{
 		var rolling=Math.floor(Math.random()*6+1)
 		currN+=rolling;
 		curr1.innerHTML=currN;
+
 			if (rolling===1)
 			{
 			currN=0
 			curr1.innerHTML=currN
 			curr2.innerHTML=currN
+			dicet.src="images/dice-1.png"
 			}
+
+			else if (rolling===2)
+			{
+				dicet.src="images/dice-2.png"
+			}
+
+			else if (rolling===3)
+			{
+				dicet.src="images/dice-3.png"
+			}
+
+			else if (rolling===4)
+			{
+				dicet.src="images/dice-4.png"
+			}
+
+			else if (rolling===5)
+			{
+				dicet.src="images/dice-5.png"
+			}
+
+			else if (rolling===6)
+			{
+				dicet.src="images/dice-6.png"
+			}
+
 		}
 		else if (player===2)
 		{
-			if (rolling===1)
+
+		var rolling=Math.floor(Math.random()*6+1)
+		currN+=rolling;
+		curr2.innerHTML=currN;
+		if (rolling===1)
 			{
 			currN=0
 			curr1.innerHTML=currN
 			curr2.innerHTML=currN
+			dicet.src="images/dice-2.png"
 			}
-		var rolling=Math.floor(Math.random()*6+1)
-		currN+=rolling;
-		curr2.innerHTML=currN;
-	
+
+			else if (rolling===2)
+			{
+				dicet.src="images/dice-2.png"
+			}
+
+			else if (rolling===3)
+			{
+				dicet.src="images/dice-3.png"
+			}
+
+			else if (rolling===4)
+			{
+				dicet.src="images/dice-4.png"
+			}
+
+			else if (rolling===5)
+			{
+				dicet.src="images/dice-5.png"
+			}
+
+			else if (rolling===6)
+			{
+				dicet.src="images/dice-6.png"
+			}
+			
 		}
 	}
 
