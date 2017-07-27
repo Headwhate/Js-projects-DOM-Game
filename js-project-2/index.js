@@ -3,12 +3,12 @@ var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correc
 //toutes les questions en bas//
 var questions = 
 [
-    ["quelle est le nom de famille du général 'De Gaulle'", "Gaulle de", "Charles", "De Gaulle", "C" ],
-	[ "qui a construit la 'tour eiffel'", "Gustave", "Michel", "Richard", "A" ],
+    ["quelle est le nom de famille du général 'De Gaulle'?", "Gaulle de", "Charles", "De Gaulle", "C" ],
+	[ "qui a construit la 'tour eiffel'?", "Gustave", "Michel", "Richard", "A" ],
 	[ "est-ce qu'une femme s'est marié a cette dernière?", "Non", "Peut etre", "Absolument", "C" ],
 	[ "qui appelle t-on?", "Bill Murray", "Chris Evans", " Gandhi", "A" ],
 	[ "qui est cette femme?", "Marilyn Manson", "Rosa Parks", " Madonna", "B" ],
-	 [ "ich ich! l'équipe...", "je sais paaass!", " est TOKA!", "est absente","B" ]
+	 [ "ich ich! l'équipe...?", "je sais paaass!", " est TOKA!", "est absente","B" ]
 ]
 	
 
